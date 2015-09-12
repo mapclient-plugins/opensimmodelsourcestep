@@ -42,7 +42,8 @@ class OpenSimModelSourceStep(WorkflowStepMountPoint):
         may be connected up to a button in a widget for example.
         '''
         # Put your execute step code here before calling the '_doneExecution' method.
-        self._model = opensim.Model(self._config['file location'])
+        print str(self._config['file location'])
+        self._model = opensim.Model(str(self._config['file location']))
         self._doneExecution()
 
     def getPortData(self, index):
