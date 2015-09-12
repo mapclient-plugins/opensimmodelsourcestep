@@ -1,0 +1,6 @@
+
+<RCC>
+  <qresource prefix="giaspcsourcestep">
+    <file>images/giaspcsourceicon.png</file>
+  </qresource>
+</RCC>
