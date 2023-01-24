@@ -2,9 +2,8 @@
 '''
 MAP Client Plugin Step
 '''
-import os
 import json
-from PySide import QtGui
+from PySide6 import QtGui
 
 from mapclient.mountpoints.workflowstep import WorkflowStepMountPoint
 from mapclientplugins.opensimmodelsourcestep.configuredialog import ConfigureDialog
@@ -41,7 +40,7 @@ class OpenSimModelSourceStep(WorkflowStepMountPoint):
         may be connected up to a button in a widget for example.
         '''
         # Put your execute step code here before calling the '_doneExecution' method.
-        print str(self._config['file location'])
+        print(str(self._config['file location']))
         self._model = opensim.Model(str(self._config['file location']))
         self._doneExecution()
 
